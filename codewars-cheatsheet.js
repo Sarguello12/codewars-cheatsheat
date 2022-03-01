@@ -117,9 +117,9 @@ function toTime(seconds){
 //
 // It was then that you realize the musician was a 400 foot tall beast from the paleolithic era! The Loch Ness Monster almost
 // tricked you!
-//     There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A) it is a 400 foot tall beast
+// There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Monster: A) it is a 400 foot tall beast
 // from the paleolithic era; B) it will ask you for tree fiddy.
-//     Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you
+// Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you
 // are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster
 // Note that the phrase can also be written as "3.50" or "three fifty".
 
@@ -128,3 +128,35 @@ function isLockNessMonster(s){
         return true;
     }
 }
+
+
+// ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+//
+// If the function is passed a valid PIN string, return true, else return false.
+// Examples (Input --> Output)
+//
+// "1234"   -->  true
+// "12345"  -->  false
+// "a234"   -->  false
+
+function validatePIN(pin){
+    // let count = 0;
+    // for(let i = 0; i < pin.length; i++) {
+    //     count += 1;
+    // }
+    // if(count === 4 || count === 6){
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    if(pin.length === 4 || pin.length === 6){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(validatePIN("5246"));
+console.log(validatePIN("524621"));
+console.log(validatePIN("52"));
+
