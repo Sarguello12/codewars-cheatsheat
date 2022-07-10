@@ -156,3 +156,13 @@ function validatePIN(pin){
     }
 }
 
+// triangle solution for searchspring interview
+let h = 3;
+
+            for(let i=0; i < h; i++) {
+               //inner loop
+              for(let j=0; j<=i; j++) {
+                 document.write('_ ');
+            }
+            document.write('<br/>');
+         }
