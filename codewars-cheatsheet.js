@@ -156,7 +156,8 @@ function validatePIN(pin){
     }
 }
 
-// triangle solution for searchspring interview
+// searchspring interview
+// triangle
 let h = 3;
 
             for(let i=0; i < h; i++) {
@@ -166,3 +167,13 @@ let h = 3;
             }
             document.write('<br/>');
          }
+
+//update counter
+const updateCounter = () => {
+  let count = parseInt(document.getElementById("count").innerHTML);
+  count++
+  document.getElementById("count").innerHTML = count;
+}
+
+// <h1 id="count">1</h1>
+// <button onClick=updateCounter()>increment</button>
