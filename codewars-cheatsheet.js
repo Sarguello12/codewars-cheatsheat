@@ -175,5 +175,7 @@ const updateCounter = () => {
   document.getElementById("count").innerHTML = count;
 }
 
+document.querySelector("button").addEventListener("click", updateCounter);
+
 // <h1 id="count">1</h1>
-// <button onClick=updateCounter()>increment</button>
+// <button>increment</button>
